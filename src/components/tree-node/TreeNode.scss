@@ -1,24 +1,24 @@
 
-ul {
+.ul-tree {
   padding: 0;
   margin: 0;
   list-style-type: none;
   position: relative;
 }
 
-li {
+.li-tree {
   list-style-type: none;
   border-left: 2px solid #999;
   margin-left: 3em;
   padding-top: 16px;
 
 
-  section{
+  .section-tree {
     padding-left: 1em;
     position: relative;
   }
 
-  section::before {
+  .section-tree::before {
     content:'';
     position: absolute;
     top: -16px;
@@ -30,7 +30,7 @@ li {
     border-right: 0 none transparent;
   }
 
-  div {
+  .div-tree {
       width: 67px;
       height: 36px;
       display: flex;

@@ -11,12 +11,12 @@ const TreeNode = ({node}: any) => {
     setShowChildren(!showChildren);
   };
   return (
-  <li>
-    <section onClick={handleClick}>
-      <div>{title}</div>
+  <li className ='li-tree'>
+    <section onClick={handleClick} className='section-tree'>
+      <div className='div-tree'>{title}</div>
     </section>
 
-    {showChildren && <ul className='ul-box-container'>
+    {showChildren && <ul className='ul-tree'>
       <Tree treeData={items} />
     </ul>}
 

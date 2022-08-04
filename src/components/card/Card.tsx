@@ -1,6 +1,8 @@
+import './Card.scss';
+
 const Card = () => {
   return (
-    <div className='cards-info'>
+    <div className='card-info'>
     </div>
   )
 }
