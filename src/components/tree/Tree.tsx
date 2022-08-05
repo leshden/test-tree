@@ -1,6 +1,6 @@
 import TreeNode from '../tree-node/TreeNode';
-import TreeNodeCardList from '../tree-node-card-list/TreeNodeCardList';
 import Card from '../card/Card';
+import type {TableRowType, CardInfoType} from '../../types/Types';
 import './Tree.scss';
 
 const Tree = ({treeData} : any) => {
@@ -9,9 +9,10 @@ const Tree = ({treeData} : any) => {
 
   if(isCardArray) {
     return ( <li id='li-crad-list'> {
-    treeData.map((node: any) => {
-      const {subTitle} = node;
-      return <Card key={subTitle} />
+    treeData.map((node: CardInfoType) => {
+      const {subTitle, dateStart} = node;
+      console.log(node)
+      return <Card key={subTitle} node={node} />
     }) }</li>)
   } else {
     return (

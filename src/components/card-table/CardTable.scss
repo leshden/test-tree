@@ -1,0 +1,123 @@
+.card-table-div {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+  border: 1px solid #2E465C;
+}
+
+.card-table-close {
+  width: 100%;
+  height: 0;
+  transition: height 0.25s ease-out;
+  // background-color: green;
+}
+
+.card-table-open {
+  width: 100%;
+  height: 223px;
+  transition: height 0.25s ease-in;
+  // background-color: green;
+}
+
+.card-table-container-open {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 297px;
+  height: 223px;
+  z-index: 1;
+  transition: top 0.25s ease-in;
+}
+
+.card-table-container-close {
+  position: absolute;
+  top: -223px;
+  left: 0px;
+  width: 297px;
+  height: 223px;
+  z-index: -2;
+  transition: top 0.25s ease-out;
+}
+
+table {
+  border-collapse: collapse;
+  border-top: none;
+}
+
+thead {
+  height: 16px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+
+  color: #2B455C;
+
+  td, th {
+    text-align: left;
+    border: 1px solid #2E465C;
+    border-top: none;
+    border-left: none;
+  }
+}
+
+.card-thead-th-id {
+  text-align: center;
+}
+
+.card-thead-th-id:hover {
+  cursor: pointer;
+}
+
+.card-thead-th-title {
+  width: 196px;
+  padding-left: 3px;
+}
+
+.card-thead-th-number {
+  text-align: center;
+}
+
+.card-thead-th-number:hover {
+  cursor: pointer;
+}
+
+tbody {
+  overflow: scroll;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  /* identical to box height */
+
+  color: #2B455C;
+
+  td, th {
+    height: 16px;
+    border: 1px solid #9CD0FF;
+    border-top: none;
+  }
+}
+
+
+.card-tbody-th-id {
+  border-left: none;
+  border-right: none;
+  font-weight: 300;
+}
+
+.card-tbody-th-title {
+  text-align: left;
+  padding-left: 3px;
+  font-weight: 300;
+}
+
+.card-tbody-th-number {
+  border-right: none;
+  font-weight: 400;
+}

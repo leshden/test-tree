@@ -1,0 +1,56 @@
+.filter-container {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  left: 84%;
+  top: 93%;
+  background-color: green;
+
+}
+
+.filter-style {
+  background: #C4C4C4;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  margin-left: 6px;
+
+}
+
+.filter-input {
+  width: 107px;
+  height: 20px;
+
+  background: #FFFFFF;
+  border-radius: 50px;
+}
+
+.filter-img {
+  width: 17.5px;
+  height: 17.5px;
+}
+
+.filter-btn-container {
+  width: 150px;
+  height: 36px;
+  background: #C4C4C4;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.filter-hide {
+  width: 36px;
+  height: 36px;
+}
+
+.filter-search {
+  width: 36px;
+  height: 36px;
+}

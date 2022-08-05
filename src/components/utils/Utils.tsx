@@ -39,4 +39,18 @@ function randomData() {
     return n
 }
 
-export {randomData}
+function formatDate(timeStamp: number): string {
+  const day = new Date(timeStamp);
+  const yyyy = day.getFullYear();
+  let mm = day.getMonth() + 1; // Months start at 0!
+  let dd = day.getDate();
+  let mmStr = String(mm);
+  let ddStr = String(dd);
+
+  if (dd < 10) ddStr = '0' + ddStr;
+  if (mm < 10) mmStr = '0' + mmStr;
+
+  return ddStr + '.' + mmStr + '.' + String(yyyy);
+}
+
+export {randomData, formatDate}
