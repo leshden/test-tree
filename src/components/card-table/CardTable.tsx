@@ -26,12 +26,7 @@ const CardTable = ({showTable, tableData} : Prop) => {
     return {...item, id: index};
   }));
 
-  console.log('render!')
-  console.log(array);
-
   const handleClickId = () => {
-    console.log('click id');
-
     setArray(() => [...array.sort(function (a: any, b: any) {
       if (a.id > b.id) {
         return 1;

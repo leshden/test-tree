@@ -5,10 +5,8 @@
   align-items: center;
   width: 200px;
   height: 50px;
-  left: 84%;
+  right: 2vw;
   top: 93%;
-  background-color: green;
-
 }
 
 .filter-style {
@@ -16,6 +14,12 @@
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
   margin-left: 6px;
+
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+
+  overflow: hidden;
 
 }
 
@@ -27,27 +31,78 @@
   border-radius: 50px;
 }
 
-.filter-img {
+.filter-select-container {
+  width: 107px;
+  height: 24px;
+
+  position: relative;
+
+}
+
+.filter-select {
+  width: 107px;
+  height: 20px;
+
+  background: #FFFFFF;
+  border-radius: 50px;
+}
+
+.filter-checkboxes-open {
+  top: -85px;
+  left: 13px;
+  width: 107px;
+  height: 100px;
+  position: absolute;
+  background-color: white;
+  border: 1px solid gray;
+  display: block;
+  overflow: auto;
+}
+
+.filter-checkboxes-close {
+  display: none;
+}
+
+
+.filter-select-tap {
+  top: 0px;
+  left: 0px;
+  width: 109px;
+  height: 21px;
+
+  background: #FFFFFF;
+  border-radius: 50px;
+  position: absolute;
+  opacity: 0;
+}
+
+.filter-checkbox-label {
+  display:block;
+}
+
+.filter-img-search {
   width: 17.5px;
   height: 17.5px;
+  margin: 9px;
 }
 
-.filter-btn-container {
+.filter-img-hide {
+  width: 14px;
+  height: 14px;
+  margin: 11px;
+}
+
+.filter-btn-container-open {
   width: 150px;
   height: 36px;
-  background: #C4C4C4;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 50px;
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  transition: width 0.25s ease-in;
 }
 
 
-.filter-hide {
+.filter-btn-container-close {
   width: 36px;
   height: 36px;
+  transition: width 0.25s ease-out;
 }
 
 .filter-search {

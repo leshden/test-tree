@@ -5,13 +5,12 @@ import './Tree.scss';
 
 const Tree = ({treeData} : any) => {
 
-  const isCardArray = (treeData[0]["subTitle"] !== undefined);
+  const isCardArray = treeData.length ? (treeData[0]["subTitle"] !== undefined) : false;
 
   if(isCardArray) {
     return ( <li id='li-crad-list'> {
     treeData.map((node: CardInfoType) => {
       const {subTitle, dateStart} = node;
-      console.log(node)
       return <Card key={subTitle} node={node} />
     }) }</li>)
   } else {
